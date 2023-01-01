@@ -1,0 +1,42 @@
+{% include 'header.html' %}
+
+{% load static %}
+
+{% block data %}
+
+
+<div class="loginsec">
+     <div class="container"><h1 text-align="center" class="pro_head">Teacher's Login Page</h1></div>
+        <section class="contact_section layout_padding-bottom">
+            <div class="container contactsec">
+              <div >
+                <div class="contact_section-container">
+                  <div class="row ">
+                    <div class="col-md-6 mx-auto ">
+                      <div class="login-form circle">
+                        <form action="/login" method="POST">
+                          {% csrf_token %}
+
+
+                          {{form}}
+        
+                          <div class="d-flex justify-content-center ">
+                            <button type="submit" class="btn_on-hover button" name="send" value="Send">Login</button>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </section>
+
+</table>
+</form>
+
+</div>
+
+
+{% endblock %}
+

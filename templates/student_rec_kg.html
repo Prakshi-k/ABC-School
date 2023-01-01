@@ -1,0 +1,62 @@
+{% include 'header.html' %}
+
+{% load static %}
+
+{% block data %}
+
+<div class="container">
+
+  <br>
+        <h1>Logged in as  <u>{{user.username}}</u></h1> <span>
+          <h1>Logged in as  <u>{{user.username}}</u></h1> <span>
+
+            <a href="/logout" class="button-17">Logout</a>
+            <a href="/signup"  class="button-17">Signup</a>
+            </span>
+        <br>
+
+</div>
+
+
+<center>
+<h1 class="pro_head"> KINDERGARTEN  SECTION</h1>
+</center>
+
+<table class="record-tab">
+    <tr class="table-headings">
+        <th>ID</th>
+        <th>Student  ID</th>
+        <th>Roll No.</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th>DOB</th>
+        <th>Mobile No.</th>
+        <th>Address</th>
+        <th>Section</th>
+
+    </tr>
+    {% for d in data %}
+    <tr  class="table-data">
+        <td>{{d.id}}</td>
+        <td>{{d.stuid}}</td>
+        <td>{{d.rollno}}</td>
+        <td>{{d.fname}}</td>
+        <td>{{d.mname}}</td>
+        <td>{{d.lname}}</td>
+        <td>{{d.dob}}</td>
+        <td>{{d.mobno}}</td>
+        <td>{{d.add}}</td>
+        <td>{{d.section}}</td>
+
+    </tr>
+
+
+    {% endfor %}
+
+
+
+    <a href="/profile" class="button-17">Profile</a>
+
+
+    {% endblock %}

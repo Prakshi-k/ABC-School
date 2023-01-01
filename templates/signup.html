@@ -1,0 +1,28 @@
+{% include 'header.html' %}
+{% include 'header2.html' %}
+{% load static %}
+<body>
+
+    <div class="container">
+    <br><br>    <br><br>   <br><br>   
+<h1>SignupPage</h1>
+<br><br>   <br><br>   <br><br>   
+    <form  method="POST" action="/signup">
+        {% csrf_token %}
+
+        <table>
+            {{form.as_p}}
+
+            <tr>
+                <td><input type="submit"  name="send" value="Save"/>  </td>
+            </tr>
+
+        </table>
+
+
+        <a href="{% url 'user_login' %}">login</a>
+
+    </form>
+</div>
+</body>
+</html>

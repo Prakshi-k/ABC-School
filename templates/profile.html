@@ -1,0 +1,54 @@
+{% include 'header.html' %}
+
+{% load static %}
+
+{% block data %}
+
+    
+<div class="container  table">
+        <br>
+        <h1>Logged in as  <u>{{user.username}}</u></h1> <span>
+            <a href="/logout" class="button-17">Logout</a>
+            <a href="/signup"  class="button-17">Signup</a>
+            </span>
+        <br>
+
+<h3 class="pro_head">Profile Page </h3>
+<br><br><br>
+
+<a href="juniorkg_std" class="button-17">Junior KG </a>
+<a href="seniorkg_std" class="button-17"> Senior KG </a>
+<br><br>
+
+<a href="first_std" class="button-17">1st </a>
+<a href="second_std" class="button-17">2nd </a>
+<a href="third_std" class="button-17">3rd </a>
+<a href="fourth_std" class="button-17">4th </a>
+<br><br>
+
+
+<a href="fifth_std" class="button-17">5th </a>
+<a href="sixth_std" class="button-17">6th </a>
+<a href="seventh_std" class="button-17">7th </a>
+<a href="eight_std" class="button-17">8th </a>
+<a href="ninth_std" class="button-17">9th </a>
+<a href="tenth_std" class="button-17">10th </a>
+
+<br><br>
+
+
+
+
+
+<a href="/profile/student_rec_p/primary" class="button-17">Primary</a>
+<a href="/profile/student_rec_s/secondary" class="button-17">Secondary</a>
+<a href="/profile/student_rec_kg/kindergarten" class="button-17">Kindergarten</a>
+
+<br><br><br><br>
+
+
+
+</div>
+
+
+{% endblock %}
